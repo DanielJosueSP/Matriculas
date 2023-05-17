@@ -1,0 +1,24 @@
+﻿class System.Collections.Generic.List<T>
+
+<h1>Pantalla entrada</h1>
+
+<table>
+    <tr>
+        <th>Login</th>
+        <th>Usuario</th>
+        <th>Contraseña</th>
+        <th>¿Olvido Usuario?</th>
+        <th>¿Olvido Contraseña?</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Usuario</td>
+            <td>@item.Contraseña</td>
+            <td>@item.<¿Olvido Usuario?/td>
+            <td>@item.<¿Olvido Contraseña?/td>
+
+        </tr>
+        
+    }
+</table>
