@@ -1,0 +1,28 @@
+@model Alumno
+
+<h1>Registrar nota</h1>
+
+<form asp-action="Registro" method="post">
+    <div asp-asp-validation-summary="All"></div>
+    <div>
+        <label>Nombre del Alumno:</label>
+        <input asp-formaction="="NombreAlumno">
+
+    </div>
+    <div>
+        <label>Evaluacion 1:</label>
+        <input asp-formaction="="Nota1">
+
+    </div>
+    <div>
+        <label>Evaluacion 2:</label>
+        <input asp-formaction="="Nota2">
+
+    </div>
+    <div>
+        <label>Evaluacion 3:</label>
+        <input asp-formaction="="Nota3">
+
+    </div>
+    <button>Registrar nota</button>
+</form>

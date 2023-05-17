@@ -1,0 +1,27 @@
+﻿@model List<Alumno>
+
+<h1>Notas registradas</h1>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>NOMBRE DEL ALUMNO</th>
+        <th>EVALUACION 1</th>
+        <th>EVALUACION 2</th>
+        <th>EVALUACION 3</th>
+        <th>PROMDEIO</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.NombreAlumno</td>
+            <td>@item.Nota1</td>
+            <td>@item.Nota2</td>
+            <td>@item.Nota3</td>
+            <td>@item.Promedio</td>
+
+        </tr>
+        
+    }
+</table>
